@@ -28,14 +28,30 @@
 				<div class="form-group">
 					<input type="text" class="form-control" id="userstate" placeholder="Eg. California, Mississippi...">
 				</div>
-				<button class="btn btn-success btn-lg center">Find My Weather</button>
-			</form>
-		</div>
+				<button id="findmyweather" class="btn btn-success btn-lg center">Find My Weather</button>
+			</form>	    
+                </div>
+                <div class="alert alert-success">
+                         This is a success alert—check it out!
+                </div>
 	</div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+          $("#findmyweather").click(function(event){
+             event.preventDefault();
+              if ($("#usercity").val()!=""){
+                $.get("weather.php?city="+$("#usercity").val(), function(data){
+                     $(".alert").html(data).fadeIn();
+                     if (data=="") {
+                        
 
-
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                       }
+                  });
+                 } else {
+                   alert ("Please enter a city");
+                   };
+              });
+        </script>
+	
 </body>
 </html>
