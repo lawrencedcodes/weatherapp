@@ -1,0 +1,38 @@
+html, body {
+	height: 100%;
+}
+#container {
+	height: 98vh;
+	background-size: cover;
+	background-image: url("sunset2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 100%;
+	padding-top: 150px;
+}
+.mynav {
+	color: white;
+}
+.center {
+	text-align: center;
+}
+#container .row h4 {
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#container .row .form-group label {
+	color: yellow;
+}
+#mainheading {
+	font-family: 'Lora', serif;
+	font-style: italic;
+	font-weight: 900;
+	color: white;	
+	font-size: 5.5rem;
+	letter-spacing: 1px;
+}
+form button, form input {
+	margin-top: 30px;
+}
