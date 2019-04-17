@@ -45,8 +45,8 @@
           $("#findmyweather").click(function(event){
              event.preventDefault();
               $(".alert").hide();
-              if ($("#usercity").val()!=""){
-                $.get("weather.php?city="+$("#usercity").val(), function(data){ 
+              if ($("#city").val()!=""){
+                $.get("weather.php?city="+$("#city").val(), function(data){ 
                      if (data=="") {
                         $("#fail").fadeIn();
                     } else {
