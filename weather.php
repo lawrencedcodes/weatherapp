@@ -8,7 +8,7 @@ $contents=file_get_contents("https://www.weather-forecast.com/locations/Dallas/f
 
 preg_match("<p class="b-forecast__table-description-content"><span class="phrase">(.*?)<\/span>/s", $contents, $matches);
 
-echo $matches[1];
+print_r($matches);
 
 
 ?>
