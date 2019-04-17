@@ -1,12 +1,12 @@
 <?php
 
-$city=$_GET['usercity'];
+$city=$_GET['city'];
 
 $city=str_replace(" ","",$city);
 
 $contents=file_get_contents("https://www.weather-forecast.com/locations/".$city."/forecasts/latest");
 
-preg_match('/<span class="phrase">(.*?)<\/span>/s', $contents, $matches);
+preg_match('/3 Day Weather Forecast Summary:<\/b><span class="phrase">(.*?)</span>', $contents, $matches);
 
 echo $matches[1];
 
