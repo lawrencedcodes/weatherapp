@@ -8,7 +8,7 @@ $contents=file_get_contents("https://www.weather-forecast.com/locations/Dallas/f
 
 preg_match('/Weather Today <\/h2>(.*?)<\/p>/s', $contents, $matches);
 
-print_r($matches);
+echo $matches[1];
 
 
 ?>
