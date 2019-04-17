@@ -10,5 +10,4 @@ preg_match('</h2>(1&ndash;3 days)</span><p class="b-forecast__table-description-
 
 echo $matches[1];
 
-
 ?>
