@@ -1,6 +1,6 @@
 <?php
 
-$city=$_GET['city'];
+$city=$_GET['usercity'];
 
 $city=str_replace(" ","",$city);
 
